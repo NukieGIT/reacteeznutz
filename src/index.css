@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --p-white: #ffffff;
+    --p-white-soft: #f3f3f3;
+    --p-white-mute: #e6e6e6;
+    --p-white-1: #d4d4d4;
+    --p-white-2: #c2c2c2;
+    --p-white-3: #b0b0b0;
+
+    --p-black: #131313;
+    --p-black-soft: #1a1a1a;
+    --p-black-mute: #202020;
+    --p-black-1: #262626;
+    --p-black-2: #2c2c2c;
+    --p-black-3: #303030;
+
+    --p-gold: #fec260;
+
+    --p-pink: #a12568;
+
+    --p-secondary-purple: #3b185f;
+
+    --p-primary-purple: #2a0944;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* semantic color variables for this project */
+:root {
+    --clr-background: var(--p-black);
+    --clr-background-soft: var(--p-black-soft);
+    --clr-background-mute: var(--p-black-mute);
+    --clr-background-1: var(--p-black-1);
+    --clr-background-2: var(--p-black-2);
+    --clr-background-3: var(--p-black-3);
+
+    --clr-heading: var(--p-white);
+    --clr-text-1: var(--p-white-soft);
+    --clr-text-2: var(--p-white-mute);
+    --clr-text-3: var(--p-white-1);
+    --clr-text-disabled: var(--p-white-3);
+
+    --clr-accent-primary: var(--p-gold);
+    --clr-accent-secondary: var(--p-pink);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --clr-background: var(--p-white);
+        --clr-background-soft: var(--p-white-soft);
+        --clr-background-mute: var(--p-white-mute);
+        --clr-background-1: var(--p-white-1);
+        --clr-background-2: var(--p-white-2);
+        --clr-background-3: var(--p-white-3);
+
+        --clr-heading: var(--p-black);
+        --clr-text-1: var(--p-black-soft);
+        --clr-text-2: var(--p-black-mute);
+        --clr-text-3: var(--p-black-1);
+        --clr-text-disabled: var(--p-black-3);
+
+        --clr-accent-primary: var(--p-gold);
+        --clr-accent-secondary: var(--p-pink);
+    }
+}
+
+/* spacing variables */
+:root {
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--clr-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-heading);
+}
+
+p,
+a,
+span,
+li,
+label,
+input,
+textarea,
+select,
+button {
+    color: var(--clr-text-1);
 }

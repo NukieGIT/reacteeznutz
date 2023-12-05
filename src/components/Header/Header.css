@@ -1,0 +1,48 @@
+header {
+    height: 70px;
+    display: flex;
+}
+
+header > * {
+    margin: 0 var(--space-md);
+}
+
+header > .left>h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-heading);
+    display: flex;
+    align-items: center;
+}
+
+header > .left,
+header > .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header > .left {
+    justify-content: center;
+}
+
+
+header > .right {
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+header > .right > a {
+    color: var(--clr-text-2);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header > .right > a:hover {
+    text-decoration: underline;
+}
+
+header > .right > a.active {
+    color: var(--clr-accent-primary);
+}
